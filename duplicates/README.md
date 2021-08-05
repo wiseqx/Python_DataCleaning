@@ -59,7 +59,7 @@ Output:
 
 |Num    |NAME|
 | ----- | ----|
-|0  |100  Python|
+|0  |100 | Python|
 |1  |100  |Python|
 |2  |100 | Python|
 |3  | 12  |Joseph|
@@ -80,13 +80,13 @@ data.replace("Siri",
            
 Output:
 
-|Num    NAME|
+|Num  |  NAME|
 | ----- | ----|
 |0  | 12 |   John|
 |1  | 14  |Camili|
 |2  | 13 | Rheana|
 |3  | 12  |Joseph|
-|4|   14 | Amanti|
+|4  | 14 | Amanti|
 |5  | 13  | Alexa|
 |6  | 15  |  Code  |       
            
@@ -99,7 +99,7 @@ Example:
 data.iloc[[0,1,3,6],[0]] = 100
 
 output
-|Num    NAME|
+|Num  |  NAME|
 | ----- | ----|
 |0  |100 |   John|
 |1 | 100 | Camili|
