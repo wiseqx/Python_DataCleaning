@@ -13,16 +13,17 @@ data.drop_duplicates(subset ="First Name",
 # How to update the value of a row in a Python Dataframe?
 
 Original Data frame:
-  
-   Num   NAME
-0   12    John
-1   14  Camili
-2   13  Rheana
-3   12  Joseph
-4   14  Amanti
-5   13   Alexa
-6   15    Siri
-
+ <!-- TABLE_GENERATE_START -->
+|  Num  | NAME|
+| ----- | ----|
+|0 |  12 |   John|
+|1 |  14 | Camili|
+|2 |  13 | Rheana|
+|3  | 12 | Joseph|
+|4 |  14 | Amanti|
+|5 |  13  | Alexa|
+|6 |  15  |  Siri|
+<!-- TABLE_GENERATE_END -->
 
 #### 1. Using Python at() method to update the value of a row
 Syntax:
@@ -34,14 +35,15 @@ data.at[6,'NAME']='Safa'
 
 Output:
 
-Num    NAME
-0   12    John
-1   14  Camili
-2   13  Rheana
-3   12  Joseph
-4   14  Amanti
-5   13   Alexa
-6   15    Safa
+|Num    |NAME|
+| ----- | ----|
+|0  | 12  |  John|
+|1  | 14 | Camili|
+|2  | 13 | Rheana|
+|3  | 12 | Joseph|
+|4  | 14 | Amanti|
+|5  | 13 |  Alexa|
+|6  | 15 |   Safa|
 
 
 #### 2. Python loc() function to change the value of a row/column
@@ -55,14 +57,15 @@ data.loc[0:2,['Num','NAME']] = [100,'Python']
 
 Output:
 
-Num    NAME
-0  100  Python
-1  100  Python
-2  100  Python
-3   12  Joseph
-4   14  Amanti
-5   13   Alexa
-6   15    Siri
+|Num    |NAME|
+| ----- | ----|
+|0  |100  Python|
+|1  |100  |Python|
+|2  |100 | Python|
+|3  | 12  |Joseph|
+|4  | 14  |Amanti|
+|5   |13  | Alexa|
+|6  | 15  |  Siri|
 
 
 #### 3. Python replace() method to update values in a dataframe
@@ -73,16 +76,19 @@ Example:
 data.replace("Siri", 
            "Code", 
            inplace=True)
+           
+           
 Output:
 
-Num    NAME
-0   12    John
-1   14  Camili
-2   13  Rheana
-3   12  Joseph
-4   14  Amanti
-5   13   Alexa
-6   15    Code         
+|Num    NAME|
+| ----- | ----|
+|0  | 12 |   John|
+|1  | 14  |Camili|
+|2  | 13 | Rheana|
+|3  | 12  |Joseph|
+|4|   14 | Amanti|
+|5  | 13  | Alexa|
+|6  | 15  |  Code  |       
            
            
 #### 4. Using iloc() method to update the value of a row
@@ -92,13 +98,14 @@ dataframe.iloc[index] = value
 Example:
 data.iloc[[0,1,3,6],[0]] = 100
 
-
-Num    NAME
-0  100    John
-1  100  Camili
-2   13  Rheana
-3  100  Joseph
-4   14  Amanti
-5   13   Alexa
-6  100    Siri
+output
+|Num    NAME|
+| ----- | ----|
+|0  |100 |   John|
+|1 | 100 | Camili|
+|2  | 13  |Rheana|
+|3  |100  |Joseph|
+|4 |  14 | Amanti|
+|5  | 13 |  Alexa|
+|6  |100 |   Siri|
 
