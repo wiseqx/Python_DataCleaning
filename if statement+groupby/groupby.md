@@ -1,4 +1,4 @@
-# conditional dataframe
+# Conditional Dataframe
 input:
  | Type    |  Set|
  |---|---|
@@ -48,7 +48,7 @@ output:
 
 
 
-# if statement based on group by sum
+# If Statement based on Groupby sum
 input:
 |CategoryA | CategoryB | Count|
 |---|---|---|
